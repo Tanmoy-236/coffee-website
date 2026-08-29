@@ -1,2 +1,1 @@
-# fb-clonee
-This is Facebook clone I made this when I was learning coding 
+This is coffee website that I've made during my practice period. I've created a full stack website, for a coffee shop.

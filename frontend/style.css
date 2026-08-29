@@ -32,7 +32,7 @@
     --font-heading: 'Playfair Display', Georgia, serif;
     --font-body: 'DM Sans', Arial, sans-serif;
 
-    --container: 1160px;
+    
     --radius-sm: 5px;
     --radius-md: 10px;
     --radius-lg: 16px;
@@ -57,7 +57,7 @@ body {
     background: var(--white);
     color: var(--text-900);
     font-family: var(--font-body);
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
     overflow-x: hidden;
 }
@@ -134,7 +134,7 @@ img {
 .site-header {
     position: relative;
     z-index: 20;
-    padding: 20px 0 0;
+   
     background: var(--white);
 }
 
@@ -166,7 +166,7 @@ img {
 .logo strong {
     display: block;
     font-family: var(--font-heading);
-    font-size: 18px;
+    font-size: 26px;
     line-height: 1;
 }
 
@@ -199,6 +199,10 @@ img {
 .links a:hover,
 .links a.active {
     color: var(--brown-800);
+}
+
+.links a:hover{
+    background-color: #fcf8f2;
 }
 
 .links a.active::after {
@@ -948,18 +952,6 @@ footer .input {
    ------------------------- */
 
 @media (max-width: 900px) {
-    .nav {
-        gap: 15px;
-    }
-
-    .logo {
-        min-width: auto;
-    }
-
-    .links {
-        gap: 18px;
-    }
-
     .menu-layout {
         grid-template-columns: 165px minmax(0, 1fr);
     }
@@ -980,16 +972,9 @@ footer .input {
 }
 
 @media (max-width: 680px) {
-    .container {
-        width: min(100% - 28px, var(--container));
-    }
-
+    
     .site-header {
         padding-top: 10px;
-    }
-
-    .nav {
-        min-height: 52px;
     }
 
     .logo strong {
