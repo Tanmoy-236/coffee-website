@@ -3,77 +3,348 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home | BeanAura</title>
+    <title>BeanAura | Premium Coffee</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- =========================
+         Header / Navigation
+         ========================= -->
     <header class="site-header">
         <div class="container">
             <nav class="nav">
-                <a class="logo" href="01-home.html">
+                <a class="logo" href="#home">
                     <span class="logo-mark">☕</span>
                     <span>
                         <strong>BeanAura</strong>
                         <small>Premium Coffee</small>
                     </span>
                 </a>
+
                 <div class="links">
-                    <a class="active" href="01-home.html">Home</a>
-                    <a href="05-menu.html">Menu</a>
-                    <a href="06-about.html">About</a>
-                    <a href="07-contact.html">Contact</a>
+                    <a class="active" href="#home">Home</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#story">About</a>
+                    <a href="#contact">Contact</a>
                 </div>
-                <a class="btn" href="05-menu.html">Order Now →</a>
+
+                <a class="btn" href="#menu">Order Now →</a>
             </nav>
         </div>
     </header>
 
-    <main class="hero">
-        <div class="blob tl"></div>
-        <div class="blob br"></div>
-        <div class="container">
-            <img class="hero-img" src="assets/hero-coffee.jpg" alt="Coffee cup">
+    <main>
 
-            <div class="divider">
-                <span>◈</span>
+        <!-- =========================
+             1. Home / Hero Section
+             ========================= -->
+        <section class="hero" id="home">
+            <div class="blob tl"></div>
+            <div class="blob br"></div>
+
+            <div class="container">
+                <img
+                    class="hero-img"
+                    src="assets/hero-coffee.jpg"
+                    alt="Coffee cup"
+                >
+
+                <div class="divider">
+                    <span>◈</span>
+                </div>
+
+                <h1>Your Daily Ritual</h1>
+                <p>Exceptional Coffee. A Better Day.</p>
+
+                <a class="btn" href="#menu">Explore Our Menu →</a>
+
+                <div class="hero-points">
+                    <div class="point">
+                        <b>☕ 100% Arabica Beans</b>
+                    </div>
+
+                    <div class="point">
+                        <b>♢ Sustainably</b>
+                        <span>Sourced</span>
+                    </div>
+
+                    <div class="point">
+                        <b>♡ Loved by</b>
+                        <span>Coffee Enthusiasts</span>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <h1>Your Daily Ritual</h1>
-            <p>Exceptional Coffee. A Better Day.</p>
-            <a class="btn" href="05-menu.html">Explore Our Menu →</a>
+        <!-- =========================
+             2. Menu Section
+             ========================= -->
+        <section class="section" id="menu">
+            <div class="blob tl"></div>
+            <div class="blob br"></div>
 
-            <div class="hero-points">
-                <div class="point">
-                    <b>☕ 100% Arabica Beans</b>
+            <div class="container">
+                <div class="divider">
+                    <span>◈</span>
                 </div>
-                <div class="point">
-                    <b>♢ Sustainably</b>
-                    <span>Sourced</span>
+
+                <h2 class="section-title">Our Menu</h2>
+                <p class="subtitle">Crafted with Passion. Served with Love.</p>
+
+                <div class="grid-3">
+                    <article class="card">
+                        <img
+                            class="product-img"
+                            src="assets/espresso.jpg"
+                            alt="Espresso"
+                        >
+
+                        <h3>Espresso</h3>
+                        <p>Rich and bold, a perfect shot of pure coffee.</p>
+
+                        <div class="card-bottom">
+                            <span class="price">$3.00</span>
+                            <button class="btn small-btn" type="button">
+                                Add to Cart ＋
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img
+                            class="product-img"
+                            src="assets/cappuccino.jpg"
+                            alt="Cappuccino"
+                        >
+
+                        <h3>Cappuccino</h3>
+                        <p>Smooth espresso with steamed milk foam.</p>
+
+                        <div class="card-bottom">
+                            <span class="price">$4.50</span>
+                            <button class="btn small-btn" type="button">
+                                Add to Cart ＋
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img
+                            class="product-img"
+                            src="assets/pour-over.jpg"
+                            alt="Pour Over"
+                        >
+
+                        <h3>Pour Over</h3>
+                        <p>Clean, aromatic and rich in natural flavors.</p>
+
+                        <div class="card-bottom">
+                            <span class="price">$5.00</span>
+                            <button class="btn small-btn" type="button">
+                                Add to Cart ＋
+                            </button>
+                        </div>
+                    </article>
                 </div>
-                <div class="point">
-                    <b>♡ Loved by</b>
-                    <span>Coffee Enthusiasts</span>
+
+                <div class="center">
+                    <a class="btn" href="05-menu.html">For More →</a>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- =========================
+             3. Story / About Section
+             ========================= -->
+        <section class="section" id="story">
+            <div class="blob tl"></div>
+            <div class="blob br"></div>
+
+            <div class="container">
+                <div class="divider">
+                    <span>◈</span>
+                </div>
+
+                <div class="story">
+                    <div>
+                        <div class="kicker">ABOUT BEAN AURA</div>
+
+                        <h2>Our Story</h2>
+
+                        <p class="story-lead">
+                            A Passion for Exceptional Coffee
+                        </p>
+
+                        <p>
+                            BeanAura was born from a simple love for coffee — a
+                            journey to bring people together over a perfect cup.
+                            We source the finest beans, roast them with care and
+                            brew each cup with passion, creating moments worth
+                            savoring.
+                        </p>
+
+                        <a class="btn" href="06-about.html">
+                            Learn More →
+                        </a>
+                    </div>
+
+                    <img
+                        class="story-img"
+                        src="assets/story-coffee.jpg"
+                        alt="Coffee and beans"
+                    >
+                </div>
+
+                <div class="values">
+                    <div class="value">
+                        <div class="icon">♢</div>
+                        <b>Premium Beans</b>
+                        <span>
+                            Carefully sourced from the world's best farms
+                        </span>
+                    </div>
+
+                    <div class="value">
+                        <div class="icon">☕</div>
+                        <b>Expert Roasting</b>
+                        <span>
+                            Small batches for maximum flavor
+                        </span>
+                    </div>
+
+                    <div class="value">
+                        <div class="icon">♡</div>
+                        <b>Made with Love</b>
+                        <span>
+                            Every cup crafted with passion and care
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             4. Contact Section
+             ========================= -->
+        <section class="section" id="contact">
+            <div class="blob tl"></div>
+            <div class="blob br"></div>
+
+            <div class="container">
+                <div class="divider">
+                    <span>◈</span>
+                </div>
+
+                <div class="contact">
+                    <div>
+                        <div class="kicker">GET IN TOUCH</div>
+
+                        <h2>Contact Us</h2>
+
+                        <p class="contact-lead">
+                            We’d Love to Hear from You
+                        </p>
+
+                        <p>
+                            Have a question, feedback or a special request?
+                            Reach out to us — we’re here to help.
+                        </p>
+
+                        <div class="info">
+                            <div class="info-item">
+                                <div class="icon">⌖</div>
+
+                                <div>
+                                    <b>Our Location</b>
+                                    <span>
+                                        123 Brew Street, Coffee Town, CT 560001
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="icon">✉</div>
+
+                                <div>
+                                    <b>Email Us</b>
+                                    <span>hello@beanaura.com</span>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="icon">☎</div>
+
+                                <div>
+                                    <b>Call Us</b>
+                                    <span>+91 98765 43210</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="form">
+                        <h3>Send Us a Message</h3>
+
+                        <input
+                            class="input"
+                            type="text"
+                            name="name"
+                            placeholder="♙  Your Name"
+                        >
+
+                        <input
+                            class="input"
+                            type="email"
+                            name="email"
+                            placeholder="✉  Your Email"
+                        >
+
+                        <input
+                            class="input"
+                            type="text"
+                            name="subject"
+                            placeholder="◇  Subject"
+                        >
+
+                        <textarea
+                            class="input"
+                            name="message"
+                            placeholder="✎  Your Message"
+                        ></textarea>
+
+                        <button class="btn" type="submit">
+                            Send Message →
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </main>
 
+    <!-- =========================
+         Footer
+         ========================= -->
     <footer>
         <div class="container">
             <div class="footer-grid">
                 <div>
                     <h4>☕ BeanAura</h4>
-                    <p>Brewing happiness, one cup at a time. Thank you for being part of our journey.</p>
+                    <p>
+                        Brewing happiness, one cup at a time.
+                        Thank you for being part of our journey.
+                    </p>
                     <p>◎　f　𝕏　♪</p>
                 </div>
 
                 <div>
                     <h4>Quick Links</h4>
                     <p>
-                        <a href="01-home.html">Home</a><br>
-                        <a href="05-menu.html">Menu</a><br>
-                        <a href="06-about.html">About Us</a><br>
-                        <a href="07-contact.html">Contact Us</a>
+                        <a href="#home">Home</a><br>
+                        <a href="#menu">Menu</a><br>
+                        <a href="#story">About Us</a><br>
+                        <a href="#contact">Contact Us</a>
                     </p>
                 </div>
 
@@ -89,13 +360,23 @@
 
                 <div>
                     <h4>Newsletter</h4>
-                    <p>Subscribe to get special offers and coffee updates.</p>
-                    <input class="input" placeholder="Your email address">
+                    <p>
+                        Subscribe to get special offers and coffee updates.
+                    </p>
+
+                    <input
+                        class="input"
+                        type="email"
+                        placeholder="Your email address"
+                    >
                 </div>
             </div>
 
-            <div class="copy">© 2026 BeanAura. All rights reserved.</div>
+            <div class="copy">
+                © 2026 BeanAura. All rights reserved.
+            </div>
         </div>
     </footer>
+
 </body>
 </html>
